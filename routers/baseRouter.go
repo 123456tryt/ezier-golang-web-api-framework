@@ -12,6 +12,5 @@ func init() {
 	HttpServeMux = http.NewServeMux()
 
 	HttpServeMux.HandleFunc("/api", controllers.ApiHandler)
-	HttpServeMux.HandleFunc("/static", http.ServeFile)
 
 }
