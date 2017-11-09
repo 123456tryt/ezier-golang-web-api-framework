@@ -2,13 +2,15 @@ package controllers
 
 import (
 	"encoding/json"
+	"ezier/models"
 	"fmt"
 	"net/http"
 )
 
 func ApiHandler(w http.ResponseWriter, req *http.Request) {
-	p := map[string]interface{}{"jerk": 1, "awesome": 2, "name": "Eric Zhou"}
-	jsonReturn(p, 1, "success", w)
+
+	agents := models.GetAllAgents()
+	jsonReturn(agents, 1, "success", w)
 
 }
 func errorHandler(w http.ResponseWriter, r *http.Request, status int) {

@@ -1,7 +1,6 @@
 package main
 
 import (
-	_ "ezier/models"
 	"ezier/routers"
 	"fmt"
 
