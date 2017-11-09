@@ -1,12 +1,13 @@
 package routers
 
 import (
-	"my_go_web_framework/controllers"
+	"ezier/controllers"
 	"net/http"
 )
 
 var HttpServeMux *http.ServeMux
 
+//其实这个可以省略调controller
 func init() {
 	HttpServeMux = http.NewServeMux()
 
