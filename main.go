@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
 	_ "ezier/models"
 	"ezier/routers"
+	"fmt"
 
 	"flag"
 	"net/http"
