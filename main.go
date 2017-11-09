@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "ezier/models"
 	"ezier/routers"
 	"fmt"
 
@@ -17,7 +18,6 @@ func main() {
 		WriteTimeout: 2 * time.Second,
 		ReadTimeout:  2 * time.Second,
 	}
-
 	server.ListenAndServe()
 	fmt.Println("server is one port 9999")
 }
